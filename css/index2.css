@@ -36,3 +36,27 @@ ol {
 	list-style-type: decimal-leading-zero;
 	margin-left: 30px;
 }
+
+table {
+	border-collapse: collapse;
+}
+
+tbody td {
+	border: dotted 3px gray;
+}
+.dotter {
+	border: dotted 3px gray;
+}
+
+th.head-table {
+	color: red;
+	text-align: center;
+}
+
+tr.one-str {
+	text-align: center;
+}
+
+tr.two-str {
+	text-align: center;
+}
