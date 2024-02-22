@@ -66,13 +66,13 @@
 						</tr>
 					</thead>
 					<tbody class='dotter'>
-						<tr class='one-str'>
+						<tr class='str'>
 							<th scope="row">1</th>
 							<td>Дмитрий</td>
 							<td>dima@mail.com</td>
 							<td>21.01.2020</td>
 						</tr>
-						<tr class='two-str'>
+						<tr class='str'>
 							<th scope="row">2</th>
 							<td>Александр</td>
 							<td>Alex@mail.com</td>
@@ -101,7 +101,7 @@
 						</tr>
 					</thead>
 					<tbody class='dotter'>
-						<tr class='one-str'>
+						<tr class='str'>
 							<th scope="row" rowspan="3">1-3</th>
 							<td colspan='2' rowspan='2'>Дмитрий-Александр <br> Alex@mail.com dima@mail.com
 							</td>
@@ -109,11 +109,11 @@
 							<td rowspan='2'>+79001234567</td>
 							<td>123456789</td>
 						</tr>
-						<tr class='two-str'>
+						<tr class='str'>
 							<td rowspan='2'>22.01.2020</td>
 							<td rowspan='2'>987654321</td> 
 						</tr>
-						<tr class='three-str'>
+						<tr class='str'>
 							<td>Иван</td>
 							<td>Ivan@mail.com</td>
 							<td>+79001112233</td> 
@@ -161,6 +161,48 @@
 					<tfoot align='right'>
 						<tr>
 							<th scope="row" colspan='4'>Всего:4</th>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+			
+			<div class='table-three'>
+				<h2>Таблица 3 вариант 14</h2>
+				<table class='dotter'>
+					<thead>
+						<tr class='str'>
+							<th scope="col" class='head-table'>#</th>
+							<th scope="col" class='head-table'>Имя</th>
+							<th scope="col" class='head-table'>E-mail</th>
+							<th scope="col" class='head-table'>Дата регистрации</th>
+							<th scope="col" class='head-table'>Номер телефона</th>
+						</tr>
+					</thead>
+					<tbody class='dotter'>
+						<tr class='str'>
+							<th scope="row">1</th>
+							<td rowspan='2'>Дмитрий <br> Александр</td>
+							<td rowspan='2'>dima@mail.com <br> Alex@mail.com</td>
+							<td rowspan='2'>21.01.2020 <br>22.01.2020 </td>
+							<td rowspan='2'>+79001234567 <br>+79001234567 </td> 
+						</tr>
+						<tr class='str'>
+							<th scope="row">2</th>
+						</tr>
+						<tr class='str'> 
+							<th scope="row" rowspan='2' colspan='2'>3-4 <br> Елена <br> Василий <br> Elena@mail.com <br> Vasya@mail.com</th>
+							<td rowspan='2'>23.01.2020 <br> 24.01.2020</td>
+							<td rowspan='3' colspan='2'>+79001234567 <br> +79001234567 <br> +79001234567 <br> +79001234567 <br> 25.01.2020</td> 
+						</tr>
+						<tr class='str'>
+						</tr>
+						<tr class='str'>
+							<th scope="row" colspan='3'>5 <br> Иван <br>Ivan@mail.com </th>
+						</tr>
+					</tbody>
+					<tfoot align='right'>
+						<tr>
+							<th scope="row" colspan='5' align='right'>Всего:5</th>
 						</tr>
 					</tfoot>
 				</table>
