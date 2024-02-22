@@ -44,6 +44,9 @@ table {
 tbody td {
 	border: dotted 3px gray;
 }
+tbody th {
+	border: dotted 3px gray;
+}
 .dotter {
 	border: dotted 3px gray;
 }
@@ -53,14 +56,10 @@ th.head-table {
 	text-align: center;
 }
 
-tr.one-str {
+tr.str {
 	text-align: center;
 }
 
-tr.two-str {
-	text-align: center;
-}
-
-tr.three-str {
-	text-align: center;
+.table-two {
+	margin-top: 30px;
 }
