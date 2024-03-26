@@ -1,0 +1,21 @@
+.image-container {
+	width: 300px;
+	height: 300px;
+}
+
+.image-container img {
+	/*border-radius: 50%; Круглое изображение*/
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+a {
+	background-color: #aaa;
+	border-color: #000;
+}
+
+a:active {
+	outline-color: #aaa;
+	background-color: black;
+}
