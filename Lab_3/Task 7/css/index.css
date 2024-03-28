@@ -26,13 +26,10 @@ footer {
 	flex-direction: column;
 }
 
-.menu {
-	border: 1px solid #ccc;
-}
-
+.menu,
 .content {
+	height: 100px;
 	border: 1px solid #ccc;
-	height: 80px;
 }
 
 .the-content,
@@ -40,6 +37,7 @@ footer {
 .other-stuff,
 .extra-stuff {
 	border: 1px solid #ccc;
+	height: 49px;
 }
 
 h1,
