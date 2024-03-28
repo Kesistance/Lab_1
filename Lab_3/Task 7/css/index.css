@@ -1,0 +1,39 @@
+body {
+	font-family: Arial, sans-serif;
+}
+
+header,
+footer {
+	height: 50px;
+	background-color: #f1f1f1;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 25% 1fr;
+}
+
+.menu {
+	grid-column: 1;
+	border: 1px solid #ccc;
+}
+
+.content {
+	grid-column: 1;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	height: 80px;
+}
+
+.the-content,
+.sec-content,
+.other-stuff,
+.extra-stuff {
+	grid-column: 2;
+	border: 1px solid #ccc;
+}
+
+h1,
+h2 {
+	margin: 0;
+}
