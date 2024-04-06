@@ -1,13 +1,13 @@
 .image-container {
 	width: 300px;
 	height: 300px;
+	border-radius: 100%;
 }
 
 .image-container img {
-	/*border-radius: 50%; Круглое изображение*/
 	width: 100%;
-	height: auto;
-	object-fit: contain;
+	height: 100%;
+	object-fit: cover;
 }
 
 a {
