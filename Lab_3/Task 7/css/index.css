@@ -29,8 +29,14 @@ footer {
 
 .menu,
 .content {
-	height: 100px;
+	height: 600px;
 	border: 1px solid #ccc;
+	border-radius: 15%;
+}
+
+.menu h1,
+.content h2 {
+	margin-top: 25%;
 }
 
 .the-content,
@@ -38,10 +44,43 @@ footer {
 .other-stuff,
 .extra-stuff {
 	border: 1px solid #ccc;
-	height: 49px;
+	height: 299px;
+	border-radius: 50px;
+	color: azure;
+}
+
+.the-content h2,
+.sec-content h2,
+.other-stuff h2,
+.extra-stuff h2 {
+	margin-top: 5%;
 }
 
 h1,
 h2 {
 	margin: 0;
+}
+
+.menu {
+	background-color: red;
+}
+
+.content {
+	background-color: blue;
+}
+
+.the-content {
+	background-color: blue;
+}
+
+.other-stuff {
+	background-color: yellow;
+}
+
+.sec-content {
+	background-color: red;
+}
+
+.extra-stuff {
+	background-color: black;
 }
