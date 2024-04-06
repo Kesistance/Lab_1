@@ -1,7 +1,7 @@
 /* Для 1 эффекта*/
 body {
 	background-image: url('https://github.com/erv1988/Web-development-tasks-v2024/blob/master/02/img/mosaic.jpg?raw=true');
-	background-size: cover;
+	background-size: contain;
 	background-size: 10px 10px;
 	background-repeat: repeat-x space repeat-y;
 }
