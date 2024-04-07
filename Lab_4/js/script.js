@@ -385,12 +385,12 @@ document.querySelectorAll('.box').forEach(item => {
 		}
 		
 		if (tog % 2 !== 0) {
-			document.getElementById('tog').innerText = "White's Turn"
+			document.getElementById('tog').innerText = "Beaver's Turn"
 			whosTurn('W')
 		}
 		
 		if (tog % 2 == 0) {
-			document.getElementById('tog').innerText = "Black's Turn"
+			document.getElementById('tog').innerText = "Squirrel's Turn"
 			whosTurn('B')
 		}
 		reddish()
@@ -406,11 +406,11 @@ document.querySelectorAll('.box').forEach(item => {
 		if (numOfKings == 1) {
 			setTimeout(() => {
 				if (tog % 2 == 0) {
-					alert('White Wins !!')
+					alert('Beavers Wins Flawless Victory')
 					location.reload()
 				}
 				else if (tog % 2 !== 0) {
-					alert('Black Wins !!')
+					alert('Squirrels Wins Flawless Victory')
 					location.reload()
 				}
 			}, 100)
