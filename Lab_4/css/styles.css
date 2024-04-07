@@ -7,10 +7,16 @@ body {
 	display: grid;
 	place-items: center;
 	overflow-x: hidden;
+	background-color:#2F4F4F;
 }
 
 h1 {
 	margin: 10px;
+}
+
+h2{
+	color:#DCDCDC;
+	font-family: 'Courier New', Courier, monospace;
 }
 
 ul {

@@ -37,12 +37,12 @@ coloring()
 
 function reddish() {
 	document.querySelectorAll('.box').forEach(i1 => {
-			if (i1.style.backgroundColor == 'pink') {
+			if (i1.style.backgroundColor == 'red') {
 					document.querySelectorAll('.box').forEach(i2 => {
 							if (i2.style.backgroundColor == 'green' && i2.innerText.length !== 0) {
 									greenText = i2.innerText
-									pinkText = i1.innerText
-									pinkColor = ((Array.from(pinkText)).shift()).toString()
+									redText = i1.innerText
+									redColor = ((Array.from(redText)).shift()).toString()
 									greenColor = ((Array.from(greenText)).shift()).toString()
 									getId = i2.id
 									arr = Array.from(getId)
@@ -51,10 +51,10 @@ function reddish() {
 									aup = eval(arr.shift())
 									a = aside + aup
 
-									if (a % 2 == 0 && pinkColor == greenColor) {
+									if (a % 2 == 0 && redColor == greenColor) {
 										i2.style.backgroundColor = 'rgb(240, 201, 150)'
 									}
-									if (a % 2 !== 0 && pinkColor == greenColor) {
+									if (a % 2 !== 0 && redColor == greenColor) {
 										i2.style.backgroundColor = 'rgb(100, 75, 43)'
 									}
 							}
@@ -77,11 +77,11 @@ document.querySelectorAll('.box').forEach(item => {
 			}
 			else if (item.style.backgroundColor == 'green' && item.innerText.length !== 0) {
 					document.querySelectorAll('.box').forEach(i => {
-							if (i.style.backgroundColor == 'pink') {
-									pinkId = i.id
-									pinkText = i.innerText
-									document.getElementById(pinkId).innerText = ''
-									item.innerText = pinkText
+							if (i.style.backgroundColor == 'red') {
+									redId = i.id
+									redText = i.innerText
+									document.getElementById(redId).innerText = ''
+									item.innerText = redText
 									coloring()
 									insertImage()
 									tog = tog + 1
@@ -99,7 +99,7 @@ document.querySelectorAll('.box').forEach(item => {
 
 			function whosTurn(toggle) {
 				if (item.innerText == `${toggle}pawn`) {
-					item.style.backgroundColor = 'pink'
+					item.style.backgroundColor = 'red'
 					if (tog % 2 !== 0 && aup < 800) {
 						if (aup == 200 && document.getElementById(`b${a + 100}`).innerText.length == 0) {
 							document.getElementById(`b${a + 100}`).style.backgroundColor = 'green'
@@ -180,7 +180,7 @@ document.querySelectorAll('.box').forEach(item => {
 						document.getElementById(`b803`).style.backgroundColor = 'aqua'
 					}
 					
-					item.style.backgroundColor = 'pink'
+					item.style.backgroundColor = 'red'
 				}
 
 				if (item.innerText == `${toggle}rook`) {
@@ -223,7 +223,7 @@ document.querySelectorAll('.box').forEach(item => {
 					}
 				}
 				
-				item.style.backgroundColor = 'pink'
+				item.style.backgroundColor = 'red'
 			}
 			
 			if (item.innerText == `${toggle}bishop`) {
@@ -267,7 +267,7 @@ document.querySelectorAll('.box').forEach(item => {
 					}
 				}
 				
-				item.style.backgroundColor = 'pink'
+				item.style.backgroundColor = 'red'
 			}
 			
 			if (item.innerText == `${toggle}queen`) {
@@ -351,7 +351,7 @@ document.querySelectorAll('.box').forEach(item => {
 					}
 				}
 				
-				item.style.backgroundColor = 'pink'
+				item.style.backgroundColor = 'red'
 			}
 			
 			if (item.innerText == `${toggle}knight`) {
@@ -380,7 +380,7 @@ document.querySelectorAll('.box').forEach(item => {
 					document.getElementById(`b${a - 200 - 1}`).style.backgroundColor = 'green'
 				}
 				
-				item.style.backgroundColor = 'pink'
+				item.style.backgroundColor = 'red'
 			}
 		}
 		
@@ -420,9 +420,9 @@ document.querySelectorAll('.box').forEach(item => {
 
 document.querySelectorAll('.box').forEach(item => {
 	item.addEventListener('click', function () {
-		if (item.style.backgroundColor == 'pink') {
-			pinkId = item.id
-			pinkText = item.innerText
+		if (item.style.backgroundColor == 'red') {
+			redId = item.id
+			redText = item.innerText
 			document.querySelectorAll('.box').forEach(item2 => {
 				item2.addEventListener('click', function () {
 					getId = item2.id
@@ -434,21 +434,21 @@ document.querySelectorAll('.box').forEach(item => {
 					a = aside + aup
 					
 					if (item2.style.backgroundColor == 'green' && item2.innerText.length == 0) {
-						if (pinkText == `Wpawn` && aup == 800) {
+						if (redText == `Wpawn` && aup == 800) {
 							document.getElementById(`b${a}`).innerText = 'Wqueen'
-							document.getElementById(pinkId).innerText = ''
+							document.getElementById(redId).innerText = ''
 							coloring()
 							insertImage()
 						}
-						else if (pinkText == `Bpawn` && aup == 100) {
+						else if (redText == `Bpawn` && aup == 100) {
 							document.getElementById(`b${a}`).innerText = 'Bqueen'
-							document.getElementById(pinkId).innerText = ''
+							document.getElementById(redId).innerText = ''
 							coloring()
 							insertImage()
 						}
 						else {
-							document.getElementById(pinkId).innerText = ''
-							item2.innerText = pinkText
+							document.getElementById(redId).innerText = ''
+							item2.innerText = redText
 							coloring()
 							insertImage()
 						}
@@ -460,7 +460,7 @@ document.querySelectorAll('.box').forEach(item => {
 							document.getElementById('b103').innerText = 'Wking'
 							document.getElementById('b104').innerText = 'Wrook'
 							document.getElementById('b105').innerText = ''
-							document.getElementById(pinkId).innerText = ''
+							document.getElementById(redId).innerText = ''
 							whiteCastleChance=false
 							coloring()
 							insertImage()
@@ -470,7 +470,7 @@ document.querySelectorAll('.box').forEach(item => {
 							document.getElementById('b106').innerText = 'Wrook'
 							document.getElementById('b107').innerText = 'Wking'
 							document.getElementById('b108').innerText = ''
-							document.getElementById(pinkId).innerText = ''
+							document.getElementById(redId).innerText = ''
 							whiteCastleChance=false
 							coloring()
 							insertImage()
@@ -481,7 +481,7 @@ document.querySelectorAll('.box').forEach(item => {
 							document.getElementById('b803').innerText = 'Bking'
 							document.getElementById('b804').innerText = 'Brook'
 							document.getElementById('b805').innerText = ''
-							document.getElementById(pinkId).innerText = ''
+							document.getElementById(redId).innerText = ''
 							blackCastleChance=false
 							coloring()
 							insertImage()
@@ -491,7 +491,7 @@ document.querySelectorAll('.box').forEach(item => {
 							document.getElementById('b806').innerText = 'Brook'
 							document.getElementById('b807').innerText = 'Bking'
 							document.getElementById('b808').innerText = ''
-							document.getElementById(pinkId).innerText = ''
+							document.getElementById(redId).innerText = ''
 							blackCastleChance=false
 							coloring()
 							insertImage()
