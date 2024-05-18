@@ -1,0 +1,80 @@
+﻿@page
+@model UnDB.Pages.Universitys.EditModel
+
+@{
+    ViewData["Title"] = "Редактировать";
+}
+
+<h1>Редактировать</h1>
+
+<h4>Университет</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="University.Id" />
+            <div class="form-group">
+                <label asp-for="University.Un_title" class="control-label"></label>
+                <input asp-for="University.Un_title" class="form-control" />
+                <span asp-validation-for="University.Un_title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="University.Address" class="control-label"></label>
+                <input asp-for="University.Address" class="form-control" />
+                <span asp-validation-for="University.Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="University.Department" class="control-label"></label>
+                <input asp-for="University.Department" class="form-control" />
+                <span asp-validation-for="University.Department" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="University.Group" class="control-label"></label>
+                <input asp-for="University.Group" class="form-control" />
+                <span asp-validation-for="University.Group" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="University.Number" class="control-label"></label>
+                <input asp-for="University.Number" class="form-control" />
+                <span asp-validation-for="University.Number" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="University.Headman" class="control-label"></label>
+                <input asp-for="University.Headman" class="form-control" />
+                <span asp-validation-for="University.Headman" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="University.Course" class="control-label"></label>
+                <input asp-for="University.Course" class="form-control" />
+                <span asp-validation-for="University.Course" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="University.Sub_group" class="control-label"></label>
+                <input asp-for="University.Sub_group" class="form-control" />
+                <span asp-validation-for="University.Sub_group" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="University.Sub_number" class="control-label"></label>
+                <input asp-for="University.Sub_number" class="form-control" />
+                <span asp-validation-for="University.Sub_number" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="University.Count" class="control-label"></label>
+                <input asp-for="University.Count" class="form-control" />
+                <span asp-validation-for="University.Count" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Сохранить" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Назад к списку</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

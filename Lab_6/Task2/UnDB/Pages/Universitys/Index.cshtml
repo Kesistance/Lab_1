@@ -1,0 +1,90 @@
+﻿@page
+@model UnDB.Pages.Universitys.IndexModel
+
+@{
+    ViewData["Title"] = "ВУЗ";
+}
+
+<h1>ВУЗЫ</h1>
+
+<p>
+    <a asp-page="Create">Создать запись</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.University[0].Un_title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.University[0].Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.University[0].Department)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.University[0].Group)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.University[0].Number)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.University[0].Headman)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.University[0].Course)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.University[0].Sub_group)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.University[0].Sub_number)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.University[0].Count)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.University) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Un_title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Department)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Group)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Headman)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Course)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sub_group)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sub_number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Count)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Редактировать</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Подробнее</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Удалить</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
