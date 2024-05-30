@@ -1,0 +1,15 @@
+.Coca-Cola {
+	list-style-type: lower-alpha;
+}
+
+.Pepsi {
+	list-style-type: square;
+}
+
+.Healthy {
+	list-style-type: armenian;
+}
+
+.Web-developer {
+	list-style-type: none;
+}

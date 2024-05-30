@@ -1,0 +1,15 @@
+#my-first-div {
+	border: 1px solid black;
+}
+
+#the-second-one {
+	margin-top: 10px;
+	border: 1px solid black;
+}
+h2 {
+	font-size: 0.8em;
+}
+
+h3 {
+	font-size: 0.8rem;
+}

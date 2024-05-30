@@ -119,3 +119,57 @@ body {
 			0 0 400px rgba(0, 255, 179, 0.7);
 	}
 }
+
+.wrapper {
+	position: relative;
+	width: 100%;
+	height: 300vh;
+
+	.spinner {
+		position: absolute;
+		height: 120px;
+		width: 120px;
+		border: 3px solid transparent;
+		border-top-color: #ff9933;
+		top: 10%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: 50%;
+		animation: spin 3s linear infinite;
+
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			border: 3px solid transparent;
+			border-radius: 50%;
+		}
+
+		&:before {
+			border-top-color: #3399ff;
+			top: -24px;
+			left: -24px;
+			right: -24px;
+			bottom: -24px;
+			animation: spin 3s linear infinite;
+		}
+
+		&:after {
+			border-top-color: #cc33ff;
+			top: 12px;
+			left: 12px;
+			right: 12px;
+			bottom: 12px;
+			animation: spin 4s linear infinite;
+		}
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

@@ -1,0 +1,8 @@
+a {
+	border: 2px solid gold;
+	padding: 10px;
+}
+
+a:active {
+	border-color: #000 #aaa #aaa #000;
+}
