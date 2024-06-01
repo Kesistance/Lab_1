@@ -5,10 +5,6 @@
       "PackagePath": "staticwebassets\\RazorPagesApp.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Kesistance\\Documents\\Web\\Lab_1-1\\Lab_6\\Task1\\RazorPagesApp\\wwwroot\\audio\\music.mp3",
-      "PackagePath": "staticwebassets\\audio\\music.mp3"
-    },
-    {
       "Id": "C:\\Users\\Kesistance\\Documents\\Web\\Lab_1-1\\Lab_6\\Task1\\RazorPagesApp\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

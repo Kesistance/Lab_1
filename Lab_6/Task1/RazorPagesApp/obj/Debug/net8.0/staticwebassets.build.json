@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0FfwbzfhJ0FFNoan0pUgfoTHEUExdEIBkhwWmmMEoKg=",
+  "Hash": "vM/8d6NWi5l/IGIOCl4RW4eLkSC5eeTua2gNiTcpkys=",
   "Source": "RazorPagesApp",
   "BasePath": "_content/RazorPagesApp",
   "Mode": "Default",
@@ -53,25 +53,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Kesistance\\Documents\\Web\\Lab_1-1\\Lab_6\\Task1\\RazorPagesApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\RazorPagesApp.bundle.scp.css"
-    },
-    {
-      "Identity": "C:\\Users\\Kesistance\\Documents\\Web\\Lab_1-1\\Lab_6\\Task1\\RazorPagesApp\\wwwroot\\audio\\music.mp3",
-      "SourceId": "RazorPagesApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kesistance\\Documents\\Web\\Lab_1-1\\Lab_6\\Task1\\RazorPagesApp\\wwwroot\\",
-      "BasePath": "_content/RazorPagesApp",
-      "RelativePath": "audio/music.mp3",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\audio\\music.mp3"
     },
     {
       "Identity": "C:\\Users\\Kesistance\\Documents\\Web\\Lab_1-1\\Lab_6\\Task1\\RazorPagesApp\\wwwroot\\css\\site.css",
