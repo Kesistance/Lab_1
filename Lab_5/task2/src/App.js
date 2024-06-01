@@ -1,5 +1,3 @@
-import './App.css';
-
 function App() {
 	const customer = {
 		first_name: 'Bob',
